@@ -11,11 +11,11 @@ const loginCheck = (user) => {
     document.getElementById("new-post").style.display = "block";
 
   } else {
-    
+
     loggedInLinks.forEach((link) => (link.style.display = "none"));
     loggedOutLinks.forEach((link) => (link.style.display = "block"));
 
-    
+
     document.getElementById("new-post").style.display = "none";
   }
 };
