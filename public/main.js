@@ -15,7 +15,7 @@ const loginCheck = (user) => {
     loggedInLinks.forEach((link) => (link.style.display = "none"));
     loggedOutLinks.forEach((link) => (link.style.display = "block"));
 
-    postList.innerHTML = '<h4 class="text-black">Login to See Posts</h4>';
+    
     document.getElementById("new-post").style.display = "none";
   }
 };
@@ -123,6 +123,7 @@ window.addEventListener("DOMContentLoaded", async (e) => {
 
       loginCheck(user);
     } else {
+      checkChanges();
       loginCheck(user);
     }
   });
